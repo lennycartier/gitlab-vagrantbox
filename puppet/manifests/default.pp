@@ -31,3 +31,4 @@ include system-update
 include system-upgrade
 include tools_packages
 include gitlab
+include gitlab-ctl-reconfigure
