@@ -8,7 +8,7 @@ Vagrant.configure("2") do |config|
 	v.memory = 1024
   end  
 
-  config.vm.network :forwarded_port, guest:10800, host:1337 
+  config.vm.network :forwarded_port, guest:1337, host:10800 
 
   config.vm.provision :puppet do |puppet|
     puppet.manifests_path = "puppet/manifests"
