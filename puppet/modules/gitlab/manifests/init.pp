@@ -12,3 +12,10 @@ class gitlab {
       }
 
 }
+
+class gitlab-ctl-reconfigure {
+        require gitlab
+	exec { "gitlab-ctl-reconfigure":
+                command => "gitlab-ctl reconfigure",
+        }
+}
